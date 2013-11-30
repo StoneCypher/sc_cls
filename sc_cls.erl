@@ -18,7 +18,13 @@
 
 
 
-gen_tree(Dataset) -> todo.
+gen_tree(Dataset) -> 
+
+    s1(Dataset).
+
+
+
+    
 
 information_gain(Attr, Dataset) -> todo.
 
@@ -39,8 +45,11 @@ is_negative(Ci) -> false. % todo
 
 s1(C) ->
 
+    AllPos = lists:all(fun is_positive/1, C),
+    AllNeg = lists:all(fun is_negative/1, C),
+
     if
-        lists:all(fun is_positive/1, C) -> yes;
-        lists:all(fun is_negative/1, C) -> no;
-        true                            -> todo
+        AllPos -> yes;
+        AllNeg -> no;
+        true   -> todo
     end.
