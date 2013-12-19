@@ -1,6 +1,11 @@
 
 % http://www.cise.ufl.edu/~ddd/cap6635/Fall-97/Short-papers/2.htm
 % http://www.vuse.vanderbilt.edu/~dfisher/Papers/ConceptFormationBook/Chapter1ComputationalModels.pdf
+% http://www.sci.brooklyn.cuny.edu/~kopec/cis718/presented99/Li%20Yao.html
+
+
+
+
 
 -module(sc_cls).
 
@@ -20,7 +25,7 @@
 
 gen_tree(Dataset) -> 
 
-    s1(Dataset).
+    s1(Dataset, fun() -> todo end).
 
 
 
@@ -36,17 +41,17 @@ entropy(Dataset) -> todo.
 
 
 
-is_positive(Ci) -> false. % todo
-is_negative(Ci) -> false. % todo
+is_positive(Ci, F) -> false. % todo
+is_negative(Ci, F) -> false. % todo
 
 
 
 
 
-s1(C) ->
+s1(C, F) ->
 
-    AllPos = lists:all(fun is_positive/1, C),
-    AllNeg = lists:all(fun is_negative/1, C),
+    AllPos = lists:all(fun(Ci) -> is_positive(Ci, F) end, C),
+    AllNeg = lists:all(fun(Ci) -> is_negative(Ci, F) end, C),
 
     if
         AllPos -> yes;
