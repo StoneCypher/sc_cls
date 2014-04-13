@@ -9,6 +9,19 @@ http://www.vuse.vanderbilt.edu/~dfisher/Papers/ConceptFormationBook/Chapter1Comp
 
 http://www.cise.ufl.edu/~ddd/cap6635/Fall-97/Short-papers/2.htm
 
+
+
+
+
+Current Library Status: *underway*
+--------------------------------------------
+
+Not ready for use
+
+
+
+
+
 Polemic
 -------
 
