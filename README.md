@@ -22,7 +22,7 @@ Not ready for use
 
 
 
-Polemic
--------
+Polemic :neckbeard:
+-------------------
 
-MIT Licensed because viral licenses and language modification are evil.  Free is only free if it's free to everyone.
+`sc_pubsub` is MIT licensed, because viral licenses and newspeak language modification are evil.  Free is ***only*** free when it's free for everyone.
